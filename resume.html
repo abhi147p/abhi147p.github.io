@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Times+New+Roman&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1cWPWLAZNB5yvOEIJRw4mafCTe4gAA_Qs/view?usp=sharing"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="https://drive.google.com/file/d/1cWPWLAZNB5yvOEIJRw4mafCTe4gAA_Qs/view?usp=sharing"
+            target="_blank">Resume</a>
+    </div>
+    <div id="main">
+        <section id="summary">
+            <h1>Abhishek Puppala</h1>
+            <p>Data Science major at University of North Texas. Possesses 2 years of experience in the AWS development
+                field. Hardworking individual who thrives in diverse, fast-paced environments and values group
+                collaboration in a professional setting. Seeking a position as a software developer or Data Scientist,
+                where I can use my skills to the advantage of the company, while having the scope to upgrade my skills.
+            </p>
+            <a href="https://drive.google.com/file/d/1cWPWLAZNB5yvOEIJRw4mafCTe4gAA_Qs/view?usp=sharing" target="_blank"
+                class="resume-button">Download Resume</a>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div>
+                <h3>University Of North Texas, Texas, USA</h3>
+                <p>Masters in Data Science — GPA: 3.75 (Aug. 2022 – May 2024)</p>
+            </div>
+            <div>
+                <h3>B V Raju Institute Of Technology, Hyderabad, India</h3>
+                <p>Bachelors in Computer Science — GPA: 9.5/10 (July. 2017 – May 2021)</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="stylish-list">
+                <li><b>Languages</b> C, C++, Java, Python, SQL</li>
+                <li><b>DevOps Tools</b>: Lambda, Elastic Search, CloudWatch, Jenkins, UCD, s3, DynamoDB, Github,
+                    Bitbucket,
+                    JFrog, Nexus, fortify, devtron.</li>
+                <li><b>Programming skills</b>: Object-Oriented analysis Design, Functional Programming, Data Structures
+                    and
+                    Algorithms</li>
+                <li><b>Core skills</b>: Data science, Machine learning, Data mining, Web scraping, Networking, RDBMS
+                </li>
+                <li><b>Frameworks/Libraries</b>: Mesa, Pandas, Numpy, Scikit learn, TensorFlow, PyTorch</li>
+                <li><b>Tools</b>: PowerBI, JupyterNoteBook, PyCharm, Microsoft Office, Microsoft Excel, Putty,
+                    RapidMiner, SAS
+                </li>
+                <li><b>Machine Learning</b>: SVM, RandomForest, LinearRegression, LogisticRegression, DecisionTree,
+                    Clustering,
+                    KNN, Boosting, NaiveBayes</li>
+                <li><b>Neural Networks</b>: Convolutional Neural Networks, ANN</li>
+                <li><b>Front End</b>: HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div>
+                <h3>Software Developer (April 2021 – August 2022)</h3>
+                <h4>Delhivery Pvt Ltd, Hyderabad, India</h4>
+                <img src="delhivery_logo.jpeg" alt="Delhivery Logo" class="company-logo">
+                <ul class="stylish-list">
+                    <li>Developed a backend WhatsApp notification manager for multiple services using Python modules and
+                        libraries such as requests to fetch the info from clients.</li>
+                    <li>Utilized multitasking abilities to migrate huge client user data of CSV file type into the
+                        system database of DynamoDB into various tables and s3 buckets by dividing the data into
+                        batches.</li>
+                    <li>Designed a lambda function for payments service, enabling various kinds of validation checks
+                        before the client performs any payment activity.</li>
+                    <li>Resolved production issues by proposing optimized solutions using root cause analysis and
+                        monitoring CloudWatch logs.</li>
+                    <li>Handled various production deployment activities using Jenkins pipelines and Urban Code
+                        Deployment.</li>
+                    <li>Developed various new pipelines using Jenkins templates by creating various jobs such as build,
+                        creating snapshots, and then performing deployment activities.</li>
+                    <li>Enabled and ran various scans such as SAST, DAST, SCA, and container for each pipeline by adding
+                        and passing the parameters through scans API.</li>
+                    <li>Created new applications using application events with the help of Urban Code Deployment and
+                        configured their following component activities with the AWS environment.</li>
+                    <li>Designed UCD deployment process for each component by installing and configuring the agents
+                        under application resources.</li>
+                    <li>Generated the system payment invoices ledger sheet by uploading the sheet of data into the s3
+                        bucket and fetching the data using the Elastic Search API.</li>
+                    <li>Migrated the GitHub code to on-prem servers and triggered application through Tomcat servers.
+                    </li>
+                    <li>Updated the company payments invoice front end template for the new application according to the
+                        requirements using HTML and CSS.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>Customer Segmentation using K-means and DBSCAN | A comparative study, UNT</h3>
+                <p>Developed 2 different unsupervised models to find better model performance among both of them, based
+                    on silhouette score using RFM (Recency, Frequency, Monetary) analysis.</p>
+                <a href="https://github.com/abhi147p/Customer_Segmentation_ML" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Basic Voice Assistant</h3>
+                <p>Designed a basic voice assistant using Python text-to-speech and speech recognition algorithms, which
+                    helps the program recognize voice and perform tasks automatically.</p>
+                <a href="https://github.com/abhi147p/Basic-Voice-Assistant" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Mesa based Covid-19 model</h3>
+                <p>Built a graphical representation of how fast Covid-19 is being spread based on metrics such as
+                    distance, mask usage, quarantine, etc., using Python Mesa programming and various agents.</p>
+                <a href="https://github.com/abhi147p/Covid-19_Mesa_Model" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Country Image Evaluation using Sentiment Analysis</h3>
+                <p>Analyzed the image evaluation of China before and after Covid-19 based on Twitter data, using
+                    algorithms like the BERT model and topic modeling.</p>
+                <a href="https://github.com/abhi147p/Abhishek_INFO5731_Spring2023/tree/main/Project_Files"
+                    target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Hotel Management DB</h3>
+                <p>Created a database system to store customer information with 8 tables, 15 instances for each table,
+                    updates, and select queries for analysis.</p>
+                <a href="https://github.com/abhi147p/HotelManagementDB" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>ULFS System | University Lost and Found System</h3>
+                <p>Developed a web application for reporting lost items using Django for backend, Python for
+                    programming, and HTML, CSS, and JavaScript for front-end.</p>
+                <a href="https://github.com/abhi147p/ulfsSystem" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Cricket Umpire Gesture Image Recognition</h3>
+                <p>Built an ML application to predict umpire gestures in cricket using classification and deep learning
+                    models like Random Forest, KNN, AlexNet, and ResNet.</p>
+                <a href="https://github.com/abhi147p/Umpire_Gesture_Recognition" target="_blank">Source Code</a>
+            </div>
+            <div>
+                <h3>Sample ChatBot Application</h3>
+                <p>Developed a chatbot application using Django framework, NLP, and Wikipedia for backend, with OTP
+                    authentication for user registration.</p>
+                <a href="https://github.com/abhi147p/Chatbot" target="_blank">Source Code</a>
+            </div>
+        </section>
+        <footer>
+            <p><strong>Contact:</strong> abhishekpuppala60@gmail.com | +1(940)299-5529 | <a
+                    href="https://github.com/abhi147p" target="_blank">GitHub</a> | <a
+                    href="https://www.linkedin.com/in/puppala-abhishek147/" target="_blank">LinkedIn</a></p>
+        </footer>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.querySelector(".sidebar").style.backgroundColor = "#87ceeb";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.querySelector(".sidebar").style.backgroundColor = "transparent";
+        }
+    </script>
+</body>
+
+</html>
