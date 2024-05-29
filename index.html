@@ -113,168 +113,122 @@
 
         <section id="skills">
             <h2>Technical Skills</h2>
-            <div class="skills-buttons">
-                <button class="skill-btn" onclick="openModal('languages')">Languages</button>
-                <button class="skill-btn" onclick="openModal('devops')">DevOps & Cloud</button>
-                <button class="skill-btn" onclick="openModal('datascience')">Data Science</button>
-                <button class="skill-btn" onclick="openModal('frameworks')">Frameworks & Libraries</button>
-                <button class="skill-btn" onclick="openModal('tools')">Tools & Software</button>
-                <button class="skill-btn" onclick="openModal('webdev')">Web Development</button>
-                <button class="skill-btn" onclick="openModal('databases')">Databases</button>
-                <button class="skill-btn" onclick="openModal('os')">Operating Systems</button>
-                <button class="skill-btn" onclick="openModal('projectmanagement')">Project Management</button>
+            <div class="skills-container">
+                <div class="skill" id="languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Bash</li>
+                        <li>PowerShell</li>
+                    </ul>
+                </div>
+                <div class="skill" id="devops">
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>Lambda</li>
+                        <li>Elasticsearch</li>
+                        <li>CloudWatch</li>
+                        <li>Jenkins</li>
+                        <li>UCD</li>
+                        <li>S3</li>
+                        <li>GitHub</li>
+                        <li>Bitbucket</li>
+                        <li>JFrog</li>
+                        <li>Nexus</li>
+                        <li>Fortify</li>
+                        <li>Devtron</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Azure (App Service, Container, App Register, SQL Database)</li>
+                    </ul>
+                </div>
+                <div class="skill" id="datascience">
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Data Mining</li>
+                        <li>SVM</li>
+                        <li>Random Forest</li>
+                        <li>Linear/Logistic Regression</li>
+                        <li>Decision Tree</li>
+                        <li>Clustering</li>
+                        <li>KNN</li>
+                        <li>Boosting</li>
+                        <li>Naive Bayes</li>
+                        <li>CNN</li>
+                        <li>ANN</li>
+                        <li>Web Scraping</li>
+                        <li>RDBMS</li>
+                        <li>AI</li>
+                        <li>Big Data</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                <div class="skill" id="frameworks">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>Mesa</li>
+                        <li>Pandas</li>
+                        <li>REST</li>
+                        <li>NumPy</li>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="skill" id="tools">
+                    <h3>Tools & Software</h3>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Jupyter Notebook</li>
+                        <li>PyCharm</li>
+                        <li>Microsoft Office</li>
+                        <li>Excel</li>
+                        <li>PuTTY</li>
+                        <li>RapidMiner</li>
+                        <li>SAS</li>
+                        <li>PySpark</li>
+                    </ul>
+                </div>
+                <div class="skill" id="webdev">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill" id="databases">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>Oracle</li>
+                        <li>SQL Server</li>
+                        <li>DynamoDB</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill" id="os">
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+                <div class="skill" id="projectmanagement">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Scrum</li>
+                        <li>JIRA</li>
+                    </ul>
+                </div>
             </div>
         </section>
-
-        <!-- Modals -->
-        <div id="languages" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('languages')">&times;</span>
-                <h3>Languages</h3>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Bash</li>
-                    <li>PowerShell</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="devops" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('devops')">&times;</span>
-                <h3>DevOps & Cloud</h3>
-                <ul>
-                    <li>Lambda</li>
-                    <li>Elasticsearch</li>
-                    <li>CloudWatch</li>
-                    <li>Jenkins</li>
-                    <li>UCD</li>
-                    <li>S3</li>
-                    <li>GitHub</li>
-                    <li>Bitbucket</li>
-                    <li>JFrog</li>
-                    <li>Nexus</li>
-                    <li>Fortify</li>
-                    <li>Devtron</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Azure (App Service, Container, App Register, SQL Database)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="datascience" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('datascience')">&times;</span>
-                <h3>Data Science</h3>
-                <ul>
-                    <li>Data Mining</li>
-                    <li>SVM</li>
-                    <li>Random Forest</li>
-                    <li>Linear/Logistic Regression</li>
-                    <li>Decision Tree</li>
-                    <li>Clustering</li>
-                    <li>KNN</li>
-                    <li>Boosting</li>
-                    <li>Naive Bayes</li>
-                    <li>CNN</li>
-                    <li>ANN</li>
-                    <li>Web Scraping</li>
-                    <li>RDBMS</li>
-                    <li>AI</li>
-                    <li>Big Data</li>
-                    <li>Data Modeling</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="frameworks" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('frameworks')">&times;</span>
-                <h3>Frameworks & Libraries</h3>
-                <ul>
-                    <li>Mesa</li>
-                    <li>Pandas</li>
-                    <li>REST</li>
-                    <li>NumPy</li>
-                    <li>Scikit-learn</li>
-                    <li>TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>Django</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="tools" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('tools')">&times;</span>
-                <h3>Tools & Software</h3>
-                <ul>
-                    <li>Power BI</li>
-                    <li>Jupyter Notebook</li>
-                    <li>PyCharm</li>
-                    <li>Microsoft Office</li>
-                    <li>Excel</li>
-                    <li>PuTTY</li>
-                    <li>RapidMiner</li>
-                    <li>SAS</li>
-                    <li>PySpark</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="webdev" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('webdev')">&times;</span>
-                <h3>Web Development</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="databases" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('databases')">&times;</span>
-                <h3>Databases</h3>
-                <ul>
-                    <li>Oracle</li>
-                    <li>SQL Server</li>
-                    <li>DynamoDB</li>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="os" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('os')">&times;</span>
-                <h3>Operating Systems</h3>
-                <ul>
-                    <li>Linux</li>
-                    <li>Windows</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="projectmanagement" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('projectmanagement')">&times;</span>
-                <h3>Project Management</h3>
-                <ul>
-                    <li>Scrum</li>
-                    <li>JIRA</li>
-                </ul>
-            </div>
-        </div>
 
         <section id="experience">
             <h2>Professional Experience</h2>
@@ -385,23 +339,6 @@
                 }
             }
             type();
-        }
-
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        window.onclick = function (event) {
-            const modals = document.getElementsByClassName('modal');
-            for (let i = 0; i < modals.length; i++) {
-                if (event.target === modals[i]) {
-                    modals[i].style.display = 'none';
-                }
-            }
         }
     </script>
 </body>
